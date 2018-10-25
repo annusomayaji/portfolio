@@ -1,0 +1,174 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /*background-image: url('../images/portfolio-background.jpg');*/
+    background-color: #0f0e0e;
+}
+
+body {
+    font-family: Open-sans, sans-serif;
+    color:white;
+    
+    
+}
+
+
+/*navigation bar*/
+.navbar {
+    background-color: #990101;
+    opacity: .5;
+    margin-bottom: 0px;
+    padding: 16px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.cbp-af-header-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link { /*navigation link format*/
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*section container*/
+
+.inside-content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    min-height: inherit;
+}
+h2{
+    text-align:center;
+    letter-spacing:7px;
+    padding-bottom:10%;
+}
+
+.centered-element{
+    text-align:center;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url('../images/portfolio-background.jpg');
+}
+@media screen and (min-width: 375px)and (max-width : 1024px) {
+    .container {
+        min-height: 100%;
+    }
+}
+
+
+/*home*/
+#home h3 {
+    margin-top: 8%;
+
+}
+.centered-element{
+   
+}
+h3 { /*typing text name*/
+    width: 33%;
+   
+    margin-left: auto;
+    margin-right: auto;
+    animation: typing-text 2s steps(14), blink 0.5s infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    h3 {
+        width: 100%;
+        margin-top: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width : 1024px) {
+    h3 {
+        width: 50%;
+        margin-top: 60%;
+    }
+}
+@keyframes typing-text { /*typing text*/
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14ch;
+    }
+}
+
+@keyframes blink { /*typing text blinking cursor*/
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: antiquewhite;
+    }
+}
+
+/*about*/
+.left-block img {
+    opacity: .7;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+}
+
+.no-border{
+    border:none !important;
+}
+.right-block p::first-letter { /*pseudo element for making first letter xx-large*/
+    font-size: xx-large;
+    color: #8b1212;
+}
+
+.left-block p::first-letter { /*pseudo element for making first letter xx-large*/
+    font-size: xx-large;
+    color: #8b1212;
+}
+/*project*/
+
+
+/*skills*/
+.skill-icon {
+    width: 20%;
+    background-color: antiquewhite;
+    opacity: .5;
+    border-radius: 5px;
+}
+
+.skill-content {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/*experiences*/
+
+.left-block, .right-block {
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+/* contact */
+.contact-content {
+    text-align: center;
+    margin-top:7%;
+}
